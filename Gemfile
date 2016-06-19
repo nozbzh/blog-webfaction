@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.0'
+ruby '2.2.0'
 
 gem 'rails', '4.2.6'
 gem 'puma'
@@ -18,6 +18,12 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'activeadmin', github: 'activeadmin'
+gem 'redactor-rails'
+gem 'carrierwave', git: 'https://github.com/carrierwaveuploader/carrierwave.git'
+gem 'mini_magick'
+gem 'fog-aws'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
@@ -25,8 +31,6 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
-  
-  
 
   gem 'quiet_assets'
 
