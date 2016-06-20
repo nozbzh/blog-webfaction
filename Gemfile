@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 
 gem 'rails', '4.2.6'
-gem 'puma'
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 gem 'pg'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
@@ -32,18 +32,18 @@ group :development, :test do
   gem 'pry-rails'
   gem 'spring'
 
-  gem 'quiet_assets'
+  # gem 'quiet_assets'
 
-  %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
-    gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
-  end
-  gem 'rails-controller-testing'
-  gem 'faker'
-  gem 'factory_girl_rails'
-  gem 'capybara'
-  gem 'database_cleaner'
+  # %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+  #   gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
+  # end
+  # gem 'rails-controller-testing'
+  # gem 'faker'
+  # gem 'factory_girl_rails'
+  # gem 'capybara'
+  # gem 'database_cleaner'
 end
 
-group :production do
-  gem 'rails_12factor'
-end
+# group :production do
+#   gem 'rails_12factor'
+# end

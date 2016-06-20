@@ -1,3 +1,5 @@
+@import "vendor/redactor";
+@import "redactor-rails/plugins";
 // SASS variable overrides must be declared before loading up Active Admin's styles.
 //
 // To view the variables that Active Admin provides, take a look at
@@ -15,3 +17,12 @@
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
+
+body.active_admin form.formtastic .redactor_box {
+  margin-left: 20%;
+  border: 1px solid #C9D0D6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 76%;
+}
