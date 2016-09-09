@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.2.0'
 
-gem 'rails', '4.2.6'
-gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
+gem 'rails', '4.2.7.1'
+gem "passenger", ">= 5.0.30", require: "phusion_passenger/rack_handler"
 gem 'pg'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
